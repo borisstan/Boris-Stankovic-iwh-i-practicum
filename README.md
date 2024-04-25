@@ -26,3 +26,7 @@ ___
 - All work must be your own. During the grading process we will check the revision history. Submissions that do not meet this requirement will not be considered.
 - You must have at least two new routes in your index.js file and one new pug template for the homepage.
 - You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
+___
+## Startup:  
+- Access key from private app is included in .env file ("APP_ACCESS" entry) so server should be started with command:  
+``` node --env-file=.env index.js ```
