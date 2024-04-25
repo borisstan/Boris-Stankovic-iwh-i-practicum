@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 List of Coffees 
+        table
+            tr
+                th Name  
+                th Producer  
+                th Strength 
+                th Flavor 
+            each coffee  in data 
+                tr 
+                    td #{coffee.properties.name} 
+                    td #{coffee.properties.producer}
+                    td #{coffee.properties.strength} 
+                    td #{coffee.properties.flavor}
